@@ -21,6 +21,11 @@ _PROVIDERS = {
         key=settings.gemini_api_key,
         model="gemini-2.0-flash",
     ),
+    "deepseek": dict(
+        base_url="https://api.deepseek.com",
+        key=settings.deepseek_api_key,
+        model="deepseek-v4-flash",
+    ),
 }
 
 
