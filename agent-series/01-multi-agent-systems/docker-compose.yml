@@ -1,0 +1,9 @@
+services:
+  multi-agent:
+    build: .
+    container_name: multi-agent-demo
+    env_file:
+      - .env
+    # Jalankan semua demo; override dengan per-demo:
+    #   docker compose run --rm multi-agent python -m src.main --demo langgraph
+    command: ["python", "-m", "src.main", "--demo", "all"]
