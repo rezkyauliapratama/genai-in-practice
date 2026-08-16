@@ -127,6 +127,14 @@ genai-in-practice/
 │       ├── data/                    ← knowledge base (markdown files)
 │       └── src/                     ← pipeline modules
 │
+├── agent-series/
+│   └── 01-multi-agent-systems/      ← Agent #1: Multi-Agent Systems
+│       ├── README.md
+│       ├── src/                     ← demo modules (LangGraph + ADK)
+│       ├── Dockerfile               ← jalankan dalam container
+│       ├── docker-compose.yml
+│       └── docs/                    ← refleksi + cheat sheet
+│
 ├── _shared/                         ← reused by every module
 │   ├── config.py
 │   ├── llm_client.py
@@ -155,9 +163,10 @@ make test                          # pytest
 
 ## Series Index
 
-| # | Article | Status |
-|---|---------|--------|
-| 01 | RAG Foundations | ✅ Published |
+| # | Series | Article | Status |
+|---|--------|---------|--------|
+| 01 | RAG | RAG Foundations | ✅ Published |
+| 01 | Agent | Multi-Agent Systems (LangGraph + ADK) | 🚧 In Progress |
 
 ---
 
